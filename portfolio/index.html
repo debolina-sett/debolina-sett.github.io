@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://kit.fontawesome.com/b8fb1912ce.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            
+            /* h1 {
+               text-align: center;
+            } */
+
+            #project{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                margin: auto;
+            }
+
+
+            .ImgThumbnail {
+               border-radius: 5px;
+               cursor: pointer;
+               transition: 0.3s;
+               height: 300px;
+               width: 30%;
+            }
+
+            /* .ImgThumbnail:nth-of-type(1) {
+               margin-left: 20%;
+            } */
+            .modal {
+               display: none;
+               position: fixed;
+               z-index: 1;
+               padding-top: 100px;
+               left: 0;
+               top: 0;
+               width: 100%;
+               height: 100%;
+               overflow: auto;
+               background-color: rgb(0, 0, 0);
+               background-color: rgba(0, 0, 0, 0.9);
+            }
+            .modalImage {
+               margin: auto;
+               display: block;
+               width: 70%;
+               height: 80%;
+               max-width: 700px;
+            }
+            #caption {
+               margin: auto;
+               display: block;
+               width: 80%;
+               max-width: 700px;
+               text-align: center;
+               color: #ccc;
+               padding: 10px 0;
+               height: 150px;
+            }
+            .close {
+               position: relative;
+               top: 15px;
+               right: 35px;
+               color: #dad8d8;
+               font-size: 40px;
+               font-weight: bold;
+               transition: 0.3s;
+            }
+            .close:hover,
+            .close:focus {
+               color: rgb(255, 255, 255);
+               cursor: pointer;
+            }
+            @media only screen and (max-width: 700px) {
+               .modalImage {
+                  width: 100%;
+               }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Debolina Sett</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Debolina
+                        <span class="text-primary">Sett</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        25 Balaram Dey Street · Kolkata, India · +91 8100992642 ·
+                        <a href="mailto:debolinasett123@gmail.com">debolinasett123@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
+                        <!-- <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Trainee</h3>
+                            <div class="subheading mb-3">ARDENT COMPUTECH PVT. LTD.</div>
+                            <p>• Studied ESP8266 Microcontroller.</p>
+                            <p>• Used Arduino IDE to learn basic codes.</p>
+                            <p>• Learnt about Internet Of Things (IoT) and little bit of Cloud Computing</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2019 - July 2019</span></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">B.P. Poddar institute of management and technology</h3>
+                            <div class="subheading mb-3">Electronics and communication engineering (ECE)</div>
+                            <!-- <div>Computer Science - Web Development Track</div> -->
+                            <p>GPA: 3.23</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2018 - Till Date</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Holy Child Institute</h3>
+                            <div class="subheading mb-3">Science: Pysics, Chemistry, Mathematics, Computer Science</div>
+                            <p>GPA: 3.56</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Year : 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item">C</li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-file-powerpoint"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-file-word"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-file-excel"></i></li>
+                        <!-- <li class="list-inline-item"><i class="fab fa-gulp"></i></li> -->
+                        <!-- <li class="list-inline-item"><i class="fab fa-grunt"></i></li> -->
+                        <!-- <li class="list-inline-item"><i class="fab fa-npm"></i></li> -->
+                    </ul>
+                    <div class="subheading mb-3">Key Courses</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data Structure & Algorithms
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Digital & Analog Communications
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Signal - Systems
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Microprocessor & Microcontroller
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Internet of Things (IoT)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div id="project">
+                        <img class="ImgThumbnail" src="bot.jpg" width="210" height="210"/>
+                        <img class="ImgThumbnail" src="wanderlust.jpg"/>
+                        <img class="ImgThumbnail" src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                        <div class="modal">
+                        <span class="close">&times</span>
+                        <img class="modalImage" id="img01" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - Juno 2.19, organised by IIC and BPPIMT Tech Forum, 2019
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2
+                            <sup>nd</sup>
+                            Place - Forma 2.19, organised by IIC and BPPIMT Tech Forum, 2019
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Top 10 - Science and Technology Fair, organised by ’Pashchim-Banga Bigyan Mancha’, 2020
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Place - Model Making Competition IEMENTECH 2020, organised by Institute of Engineering and Management (IEM), 2020
+                        </li>
+                        <p></p>
+                        <p></p>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Problem Solving Through Programming in C, NPTEL
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Ethics in Engineering Practice, NPTEL
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Industrial Training on Internet Of Things (IOT), Issuing authority: Ardent Computech Pvt. Ltd.
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="script.js"></script>
+        <script>
+            var modalEle = document.querySelector(".modal");
+            var modalImage = document.querySelector(".modalImage");
+            Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+            item.addEventListener("click", event => {
+            modalEle.style.display = "block";
+            modalImage.src = event.target.src;
+            });
+            });
+            document.querySelector(".close").addEventListener("click", () => {
+            modalEle.style.display = "none";
+            });
+        </script>
+    </body>
+</html>
